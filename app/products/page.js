@@ -1,11 +1,11 @@
+import TemplateDefault from "@/src/templates/TemplateDefault"
 
-import Sidebar from '@/src/components/Sidebar'
 const Products = () => {
 
   return (
-    <>
-      <Sidebar />
-    </>
+    <TemplateDefault>
+      p
+    </TemplateDefault>
   )
 }
 

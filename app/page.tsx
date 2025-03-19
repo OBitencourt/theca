@@ -1,9 +1,13 @@
+import TemplateDefault from '@/src/templates/TemplateDefault'
 
 const Home = () => {
 
   return (
     <>
-      A
+      <TemplateDefault>
+        A
+      </TemplateDefault>
+      
     </>
   )
 }

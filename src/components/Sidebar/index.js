@@ -29,7 +29,7 @@ const Sidebar = () => {
                         onClick={() => handleLinks('/')}
                     >
                         <Image 
-                            src="/images/home-gray-theca.svg"
+                            src={pathname === '/' ? "/images/home-blue.svg" : "/images/home-gray-theca.svg"}
                             alt="Home"
                             width={35}
                             height={35}
@@ -42,7 +42,7 @@ const Sidebar = () => {
                         onClick={() => handleLinks('/movements')}
                     >
                         <Image 
-                            src="/images/movements-gray.svg"
+                            src={pathname === '/movements' ? "/images/movements-blue.svg" : "/images/movements-gray.svg"}
                             alt="Home"
                             width={35}
                             height={35}

@@ -8,6 +8,7 @@ export const SidebarStyled = styled.div`
     height: 100vh;
     position: fixed;
     background-color: transparent;
+    margin-right: 22%;
 `
 
 export const LogoSpace = styled.div`
