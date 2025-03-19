@@ -1,9 +1,11 @@
 
+const Home = () => {
 
-export default function Home() {
   return (
     <>
-    
+      A
     </>
-  );
+  )
 }
+
+export default Home
