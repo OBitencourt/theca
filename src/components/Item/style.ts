@@ -13,7 +13,7 @@ export const ItemDiv = styled.div`
     width: 31%;
     border-radius: 12px;
     border: 2px solid var(--border-color);
-    padding: 34px;
+    padding: 34px 34px 30px 34px;
     display: flex;
     flex-direction: column;
 
@@ -55,7 +55,7 @@ export const ButtonsWrapper = styled.div`
     display: flex;
     gap: 8px;
     align-self: flex-end;
-    padding-top: 16px;
+    padding-top: 20px;
 `
 
 export const ActionButton = styled.button`

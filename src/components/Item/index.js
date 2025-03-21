@@ -15,6 +15,9 @@ const Item = () => {
                     </TitleWrapper>
                     <InfoWrapper>
                         <h4>
+                            Preço: <span>4.90 €</span>
+                        </h4>
+                        <h4>
                             Quantidade atual: <span>5 unidades</span>
                         </h4>
                         <h4>
