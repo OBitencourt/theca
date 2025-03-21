@@ -1,12 +1,17 @@
 
+import { useEffect } from 'react'
 import { Backdrop, ButtonsWrapper, CancelButton, ConfirmButton, FormBox, ModalBox, StyledInput } from './style'
-const AddModal = () => {
+const AddModal = ({ isActive, closeModal }) => {
+
+    useEffect(() => {
+        console.log(isActive)
+    }, [isActive])
 
     return (
 
         <>
-            <Backdrop>
-                <ModalBox>
+            <Backdrop onClick={closeModal} $isActive={isActive}>
+                <ModalBox onClick={e => e.stopPropagation()}>
                     <h2>
                         Adicionar Item
                     </h2>
@@ -38,14 +43,14 @@ const AddModal = () => {
 
 
                     </FormBox>
-                        <ButtonsWrapper>
-                            <CancelButton>
-                                Cancelar
-                            </CancelButton>
-                            <ConfirmButton>
-                                Adicionar
-                            </ConfirmButton>
-                        </ButtonsWrapper>
+                    <ButtonsWrapper>
+                        <CancelButton onClick={closeModal}>
+                            Cancelar
+                        </CancelButton>
+                        <ConfirmButton onClick={closeModal}>
+                            Adicionar
+                        </ConfirmButton>
+                    </ButtonsWrapper>
                 </ModalBox>
             </Backdrop>
         </>

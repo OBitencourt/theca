@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
-export const Backdrop = styled.div`
+export const Backdrop = styled.div<{ $isActive: boolean}>`
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
+    display: ${({$isActive}) => ($isActive ? 'flex' : 'none')};
     align-items: center;
     justify-content: center;
     z-index: 2;
+    overflow-x: hidden;
+    
 `
 
 
